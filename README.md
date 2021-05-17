@@ -11,10 +11,10 @@ Dependencies
 This project requires pipenv and Python 3.6.
 Install and configure a Python virtual environment:
 
-`$> pipenv --python3.6`
-
-`$> pipenv install`
-
+```bash
+$> pipenv --python3.6`
+$> pipenv install
+```
 Sample Data
 ===========
 <p align="justify">Two sample fasta files are provided. One containing randomly generated base pair sequences of the same length with no gaps, and one which is the same but with random gaps.</p>
@@ -25,14 +25,16 @@ Instructions
 
 <p align="justify">Basic use: for calculating the pair-wise distances between sequences (with no gaps), open a terminal in Linux/GNU or Mac OS X, and type the following: </p>
   
-  "sudo python mrpipeline.py input_file output_file"
-  
+ ```bash
+ S> sudo python mrpipeline.py input_file output_file"
+ ```
 <p align="justify">N.B Replace the input file with the file name of the fasta file you wish to generate pair-wise distances for.  Replace output_file with any file name you wish that is allowed by your operating system. Do not use this mode if there are any gaps in the sequences being analysed because this will generate artificial divergence values.</p>
 
 <p align="justify">If the sequences being analysed have gaps in them i.e some of them are partial coverage, MrHamming can generate a consensus mask in order to 'mask out' these regions.  In order to make use of this feature run MrHamming in the terminal with the addition of the 'p' flag as follows:</p> 
-  
-  "sudo python mrpipeline.py input_file output_file p"
-  
+
+```bash
+$> sudo python mrpipeline.py input_file output_file p
+```  
 <p align="justify">N.B Comparing partial sequences can lead to divergence values that are not a true reflection of the evolutionary divergence of two sequences, approach with caution.</p>
 
 <p align="justify">When finished processing the output file from both modes (gaps and no-gaps) will contain a series of lines containing something like the following:</p>
