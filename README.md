@@ -12,7 +12,7 @@ This project requires pipenv and Python 3.6.
 Install and configure a Python virtual environment:
 
 ```bash
-$> pipenv --python3.6`
+$> pipenv --python3.6
 $> pipenv install
 ```
 Sample Data
@@ -26,7 +26,8 @@ Instructions
 <p align="justify">Basic use: for calculating the pair-wise distances between sequences (with no gaps), open a terminal in Linux/GNU or Mac OS X, and type the following: </p>
   
  ```bash
- S> sudo python mrpipeline.py input_file output_file"
+ $> pipenv shell
+ $> sudo python mrpipeline.py input_file output_file
  ```
 <p align="justify">N.B Replace the input file with the file name of the fasta file you wish to generate pair-wise distances for.  Replace output_file with any file name you wish that is allowed by your operating system. Do not use this mode if there are any gaps in the sequences being analysed because this will generate artificial divergence values.</p>
 
